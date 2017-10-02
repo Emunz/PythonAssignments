@@ -46,3 +46,19 @@ typeFinder(mL)
 typeFinder(lL)
 typeFinder(eL)
 typeFinder(spL)
+
+#output 
+# That's a small number
+# That's a big number!
+# That's a big number!
+# That's a small number
+# That's a small number
+# Short sentence
+# Long sentence
+# Long sentence
+# Short sentence
+# Short list
+# Big list!
+# Big list!
+# Short list
+# Short list
