@@ -1,0 +1,173 @@
+[33mcommit 4514abd1a429216fa048d45c4dbe1b7c4cecd620[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Wed Oct 4 17:55:13 2017 -0500
+
+    updated gitignore
+
+[33mcommit a89e7fae8774ebdea79c7ac6c0fdb47bb6eb345f[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Wed Oct 4 17:48:27 2017 -0500
+
+    added git ignore file, renamed some folders
+
+[33mcommit 37ee754ce744ce44f7907aa256b93af51f039edd[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Wed Oct 4 17:26:12 2017 -0500
+
+    added the hospital assignment
+
+[33mcommit dafbdc7f9eeaf1d587fe00c26ca4a0f73e18010e[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Wed Oct 4 16:33:44 2017 -0500
+
+    added the call center assignment
+
+[33mcommit a3bf345e664f8506ae28c70e3fece2710b866fbf[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Wed Oct 4 14:14:32 2017 -0500
+
+    added dojo math class practice
+
+[33mcommit d23a2a6d950b572ecc92b222a1f07682262a6e3c[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Wed Oct 4 13:35:20 2017 -0500
+
+    added the animals object inheritance assignment
+
+[33mcommit 1afbafd60a0b91a960a3fc01707c0203fdfd2977[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Wed Oct 4 11:57:55 2017 -0500
+
+    added deck of cards creator
+
+[33mcommit b34093854785a11a8c63d39784a11bca78504692[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Wed Oct 4 11:56:54 2017 -0500
+
+    added the store class assignment
+
+[33mcommit 4b6ee5debe8f3629d5a0559160d386535a7366f9[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Tue Oct 3 22:07:12 2017 -0500
+
+    added the product class assignment
+
+[33mcommit 7665cd71633bfc961b90ac72c17802ff863035b7[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Tue Oct 3 21:37:20 2017 -0500
+
+    added the car class assignment
+
+[33mcommit 0e3d1b4804bfd56d3c8033db10cc3a0fe64f2b19[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Tue Oct 3 21:09:48 2017 -0500
+
+    added new oop projects folder and the first bike assignment learning how to use classes
+
+[33mcommit e2e70aa2dd7dcab3cec3cb6ae177b9edf1b664f1[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Tue Oct 3 13:35:30 2017 -0500
+
+    making dictionaries out of lists
+
+[33mcommit 9f804a8fd8ab1d22f0a6de6525d54b5092fe8293[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Tue Oct 3 13:13:17 2017 -0500
+
+    added the dictionary to tuples assignment
+
+[33mcommit 565a83b3491d732097990853089c32d4ed3fd170[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Tue Oct 3 13:04:15 2017 -0500
+
+    added the names print function
+
+[33mcommit e19f50f53d37037f5a17387b3c1406c44d32fab0[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Tue Oct 3 12:14:14 2017 -0500
+
+    dictionary fundamentals
+
+[33mcommit ef198ea3846a5f2d9e03a6e042e97b9d1390e930[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Tue Oct 3 12:06:05 2017 -0500
+
+    added the stars and strings assignment
+
+[33mcommit 5d8d51579da17985202fea08debd9851f5cf5277[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Tue Oct 3 11:54:15 2017 -0500
+
+    flipping a coin generator
+
+[33mcommit 4182722666c720fc60e41957be6a974206b56ce4[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Tue Oct 3 11:40:22 2017 -0500
+
+    added the scores and grades generator function
+
+[33mcommit b3fee78c93b403e5591744516113491c86342e83[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Tue Oct 3 11:28:52 2017 -0500
+
+    added fun with functions assignment
+
+[33mcommit 6cb26e9115e5cb227a2a5e7478db3bb6d13ce199[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Mon Oct 2 16:52:56 2017 -0500
+
+    added the Foo Bar challenge
+
+[33mcommit 5bd9d56f0ab82c5fa0c69e540c4f7d5e0a3bfdb8[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Mon Oct 2 15:51:35 2017 -0500
+
+    added the multiplication rows assignment
+
+[33mcommit 9d35d67c9bea05f3e536b1c80bcb348f7c1dba0a[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Mon Oct 2 15:15:06 2017 -0500
+
+    added checkerboard
+
+[33mcommit 9748b15e844cfeca759eb93102f9d72f26dd87c3[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Mon Oct 2 14:44:22 2017 -0500
+
+    added character finder assignment
+
+[33mcommit 1468c30d3497704cc32ea56a9ca3e88acb9e5547[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Mon Oct 2 14:27:51 2017 -0500
+
+    added list comparison function
+
+[33mcommit 2b06467496d82c8414daa07f9f717b41bae23a4d[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Mon Oct 2 14:13:51 2017 -0500
+
+    added the type list assignment
+
+[33mcommit 1b483f77f304070c103ec7ea65e162fa8a3302a0[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Mon Oct 2 13:35:08 2017 -0500
+
+    added the filter by type practice
+
+[33mcommit a521f09e2f09b01a7565549b47db9ebd0be261ee[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Mon Oct 2 13:19:54 2017 -0500
+
+    added multiples sum and average python practice
+
+[33mcommit 6e3e9bf293e644f1b6e8bc461512ddbc784744e9[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Mon Oct 2 13:04:02 2017 -0500
+
+    added list and string practice
+
+[33mcommit b0da6ca6c9a68f6000ac53f4eff6f55f715256ac[m
+Author: Evan Munz <emunz14@gmail.com>
+Date:   Mon Oct 2 12:08:14 2017 -0500
+
+    added the hello world syntax practice
