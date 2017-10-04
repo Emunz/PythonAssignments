@@ -1,13 +1,11 @@
 class Patients(object):
     ID = 1000
-    bed_number = 50
     def __init__(self, name, allergies):
         self.id = Patients.ID
         Patients.ID += 1
         self.name = name
         self.allergies = allergies
-        Patients.bed_number += 1
-        self.bed_number = Patients.bed_number
+        self.bed_number = None
 
 class Hospital(object):
     def __init__(self, name, capacity):
@@ -19,7 +17,9 @@ class Hospital(object):
         if len(self.patients) >= self.capacity:
             print 'I\'m sorry, ' + name + ', but the hospital is full'
         else:
-            self.patients.append(Patients(name, allergies))
+            new_pat = Patients(name, allergies)
+            new_pat.bed_number = len(self.patients) + 1
+            self.patients.append(new_pat)
             print name + ', your admission process has been completed'
         return self
 
