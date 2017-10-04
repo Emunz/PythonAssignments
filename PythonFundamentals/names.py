@@ -16,10 +16,7 @@ def roll_call ():
         print people
         number = 0
         for data in names:
-            name = ''
             number += 1
-            for key, value in data.iteritems():
-                name += value + ' '
+            name = data['first_name'] + ' ' + data['last_name']
             print str(number) + ' - ' + name + '- ' + str(len(name)-name.count(' '))
-            name = ''
 roll_call()
