@@ -1,0 +1,17 @@
+.wrapper {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+    background-color: skyblue;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+}
+
+h1 {
+    display: block;
+    /* color: red; */
+    margin: 0 auto;
+}

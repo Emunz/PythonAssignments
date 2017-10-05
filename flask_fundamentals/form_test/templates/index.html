@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='my_style.css') }}">
-    <script type="text/javascript" src="{{ url_for('static', filename='my_script.js') }}"></script>    
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>My name is Anna</p>
+    <h1>Index Page</h1>
+    <h3>Create a User</h3>
+    <form action="/users" method="post">
+        Name: <input type="text" name="name">
+        Email: <input type="text" name =email>
+        <input type="submit" value="submit">
+    </form>    
 </body>
 </html>
