@@ -6,7 +6,10 @@ app.count = 0
 
 @app.route('/')
 def index():
-    session['counter'] += 1
+    if session.has_key('counter') == False:
+        session['counter'] = 1
+    else:
+        session['counter'] += 1
     return render_template("index.html", count=session['counter'])
 
 @app.route('/increment', methods=["POST"])
