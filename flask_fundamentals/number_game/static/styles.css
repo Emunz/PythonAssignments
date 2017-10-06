@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3, form, h2{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+}
+
+h1, h3, button, .wrong, .right, input {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+input, h3 {
+    margin-top: 20px;
+}
+
+.wrong, .right {
+    width: 300px;
+    height: 160px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+    color: white;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.wrong h1, .right h1 {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.right {
+    background-color: #22B122;
+}
+
+#correct {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+#btn {
+    font-size: 20px;
+    width: 160px;
+    height: 30px;
+    background-color: #003300;
+    border: 1px solid #ddd;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #535252;
+    color: #ddd;
+}
+
+
+.wrong {
+    background-color: #A71919;
+}
