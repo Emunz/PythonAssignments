@@ -18,19 +18,13 @@ def return_answer():
         return redirect("/")
     elif int(guess) > session['correct_number']:
         session['guess_status'] = 'high'
-        print 'number too high'
-        session['need_number'] = False
         return redirect("/")
     elif int(guess) < session['correct_number']:
         session['guess_status'] = 'low'
-        print 'number too low'
-        session['need_number'] = False
         return redirect("/")
     elif int(guess) == session['correct_number']:
         session['guess_status'] = 'right'
-        print 'YOU NAILED IT, FRAN'
         session.pop('correct_number')
-        session['need_number'] = True
         return redirect("/")
     else:
         print 'Please enter a number between 0 and 100'
