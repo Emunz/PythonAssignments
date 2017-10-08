@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.square {
+    display: inline-block;
+    border: 1px solid #705310;
+    background-color: goldenrod;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 8px;
+}
+
+.square h1, .square p {
+    color: #FFF9DD
+}
+
+.square p {
+    font-size: 18px;
+}
+
+.square input {
+    background-color: #ECEC95;
+    font-size: 16px;
+}
+
+.gold-counter {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.activity-log p {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.activity-log ul {
+    list-style: none;
+}
+
+.activities {
+    border: 1px solid black;
+    height: 300px;
+    border-radius: 8px;
+    background-color: #FFF9DD;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
