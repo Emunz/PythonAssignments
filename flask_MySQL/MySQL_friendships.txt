@@ -1,0 +1,34 @@
+MySQL - Lead Gen Business
+
+1)
+SELECT SUM(billing.amount) as total, billing.charged_datetime as March FROM billing
+
+WHERE billing.charged_datetime LIKE '%12-03-%'
+
+2)
+
+3)
+
+4)
+
+5)
+
+6)
+
+7)
+
+8)
+
+9)
+
+10)
+
+
+
+
+
+
+
+
+
+

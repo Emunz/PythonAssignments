@@ -45,7 +45,7 @@
     <div class="eight offset-by-two columns activity-log">
         <p>Activities:</p>
         <div class="activities">
-            {% if session['log'] %}
+            {% if session['activities'] %}
             <ul>
                 {% for earning in session['activities'] %}
                 <li>{{ earning }}</li>

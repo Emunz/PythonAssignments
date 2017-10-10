@@ -1,0 +1,60 @@
+MySQL countries
+
+1)
+SELECT * from countries
+
+JOIN languages ON languages.country_id = countries.id
+
+Where languages.language = "Slovene"
+
+ORDER BY percentage DESC
+
+2)
+SELECT countries.name, count(*) AS counted_cities FROM countries
+
+JOIN cities ON cities.country_id = countries.id
+
+GROUP BY countries.name
+
+ORDER BY counted_cities DESC
+
+3)
+SELECT * from countries
+
+JOIN cities ON cities.country_id = countries.id
+
+WHERE countries.name = "Mexico" and cities.population > 500000
+
+4)
+SELECT * from countries
+
+JOIN languages ON languages.country_id = countries.id
+
+WHERE languages.percentage > 89
+
+ORDER BY languages.percentage DESC
+
+5)
+SELECT * from countries
+
+WHERE surface_area < 501 and population > 100000
+
+
+6)
+SELECT * from countries
+
+WHERE government_form = "Constitutional Monarchy" and capital > 200 and life_expectancy > 75
+
+
+7)
+SELECT countries.name, cities.name, cities.district, cities.population from countries
+
+JOIN cities ON cities.country_id = countries.id
+
+Where countries.name = "Argentina" and cities.district = "Buenos Aires" and cities.population > 500000
+
+8)
+SELECT countries.region, count(*) AS counted_countries FROM countries
+
+GROUP BY countries.region
+ORDER BY counted_countries DESC
