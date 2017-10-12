@@ -79,7 +79,7 @@ def wall():
     name = session['name']
     query_2 = "SELECT concat(first_name, ' ', last_name) as full_name, concat(monthname(comments.created_at), ' ', day(comments.created_at), ' ', hour(comments.created_at), ':', minute(comments.created_at)) as posted_time, comments.message_id, comment, comments.created_at FROM comments JOIN messages ON messages.id = comments.message_id JOIN users ON users.id = comments.user_id ORDER BY comments.created_at ASC"
     all_comments = mysql.query_db(query_2)
-    datetime = time.strftime("%Y-%m-%d %H:%M")
+    datetime = time.strftime("%H:%M")
     return render_template('wall.html', **locals())
 
 @app.route('/messagepost', methods=['POST'])
