@@ -1,0 +1,10 @@
+/login - POST
+/register - POST
+/index - GET
+/create_cat - POST
+/show_cat/<id> - GET
+/delete_cat - POST
+/update_cat - POST
+/create_cat_form - POST
+/update_cat_form - POST
+
