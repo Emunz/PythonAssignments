@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Results</title>
+</head>
+<body>
+    <h1>Results</h1>
+    <fieldset>
+        <legend>Survey Results</legend>
+        <p>Name: {{ request.session.name_answer }}</p>
+        <p>Dojo Location: {{ request.session.location_answer }}</p>
+        <p>Favorite Language: {{ request.session.language_answer }}</p>
+        <p>Comment: {{ request.session.comment_answer }}</p>
+        <button><a href="/">Go Back</a></button>
+    </fieldset>
+</body>
+</html>
