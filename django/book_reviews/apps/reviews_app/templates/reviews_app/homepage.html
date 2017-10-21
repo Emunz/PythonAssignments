@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Page</title>
+</head>
+<body>
+    <h1>Welcome, {{request.session.name}}</h1>
+    <a href="/logout">Logout</a><br />
+    <br />
+    <a href="/books/review">Add A Book Review</a>
+
+    <h3>Your Bookshelf:</h3>
+    <table width="1000px">
+        <thead>
+            <th>Book</th>
+            <th>Author</th> 
+            <th>Rating</th>
+            <th>Actions</th>
+        </thead>
+        {% for book in users_books %}
+            <tr>
+                <td>{{ book.title }}</td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.rating }}</td>
+                <td><a href="/books/destroy/{{book.id}}">Remove</a> || <a href="/books/{{book.id}}">Review</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <h3>All Recent Book Reviews:</h3>
+    <table width="1000px">
+        <thead>
+            <th>Book</th>
+            <th>Author</th> 
+            <th>Rating</th>
+            <th>Actions</th>
+        </thead>
+        {% for book in books %}
+            <tr>
+                <td><a href="/books/{{book.id}}">{{ book.title }}</a></td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.rating }}</td>
+                <td><a href="/books/destroy/{{book.id}}">Remove</a> || <a href="/books/{{book.id}}">Review</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

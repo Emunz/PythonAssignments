@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Page</title>
+</head>
+<body>
+    <a href="/friends">Home</a><br />
+    <br />
+    <a href="/logout">Logout</a>
+    <hr />
+
+    <h1>{{ user.first_name }}'s Page</h1>
+    <p>Name: {{user.first_name}} {{user.last_name}}</p>
+    <p>Email address: {{user.email}}</p>
+    <p>Birthday: {{user.birthday}}</p>
+    <p>User since: {{user.created_at}}</p>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reviews</title>
+</head>
+<body>
+    <a href="/books">Home</a><br />
+    <a href="/logout">Log out</a>
+    {% if messages %}
+        <ul>
+        {% for message in messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+
+    <h1>Add a New Book Title and a Review:</h1>
+    <form action="/books/create_review" method="POST">
+        {% csrf_token %}
+        Book Title: <input type="text" name="title"><br />
+        Author: <input type="text" name="author"><br />
+        Review: <textarea name="review" cols="30" rows="10"></textarea><br />
+        Rating:
+        <select name="rating">
+            <option value="1">1 star</option>
+            <option value="2">2 stars</option>
+            <option selected="selected" value="3">3 stars</option>
+            <option value="4">4 stars</option>
+            <option value="5">5 stars</option>
+        </select><br />
+        <input type="submit" value="Post Review">
+    </form>
+
+    <table width="800px">
+            <thead>
+                <th>Book</th>
+                <th>Author</th> 
+                <th>Rating</th>
+                <th>Actions</th>
+            </thead>
+            {% for book in books %}
+                <tr>
+                    <td>{{ book.title }}</td>
+                    <td>{{ book.author }}</td>
+                    <td>{{ book.rating }}</td>
+                    <td><a href="#">Remove</a><a href="#">Review</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+</body>
+</html>
