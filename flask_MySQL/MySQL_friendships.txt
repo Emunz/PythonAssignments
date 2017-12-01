@@ -6,18 +6,86 @@ SELECT SUM(billing.amount) as total, billing.charged_datetime as March FROM bill
 WHERE billing.charged_datetime LIKE '%12-03-%'
 
 2)
+SELECT SUM(billing.amount) as total, billing.client_id FROM billing
+
+Join clients ON clients.client_id = billing.client_id
+
+WHERE billing.client_id = 2
 
 3)
+SELECT clients.client_id, sites.domain_name FROM clients
+
+Join sites ON clients.client_id = sites.client_id
+
+WHERE sites.client_id = 10
 
 4)
+SELECT sites.domain_name, count(sites.site_id) as number_of_websites, clients.client_id, Monthname(sites.created_datetime) as month_created, Year(sites.created_datetime) as year_created FROM clients
+
+JOIN sites ON sites.client_id = clients.client_id
+
+WHERE clients.client_id = 1
+
+GROUP BY sites.created_datetime
 
 5)
+SELECT sites.site_id, sites.domain_name, count(leads.leads_id), leads.registered_datetime as leads FROM sites
+
+JOIN leads ON leads.site_id = sites.site_id
+
+WHERE (leads.registered_datetime BETWEEN '2011-01-01 00:00:00' AND '2011-02-15 23:59:59')
+
+GROUP BY sites.site_id
+
+SELECT sites.domain_name, count(sites.site_id) as number_of_websites, clients.client_id, Monthname(sites.created_datetime) as month_created, Year(sites.created_datetime) as year_created FROM clients
+
+JOIN sites ON sites.client_id = clients.client_id
+
+WHERE clients.client_id = 20
+
+GROUP BY sites.created_datetime
 
 6)
+SELECT clients.client_id, clients.first_name, clients.last_name, count(leads.leads_id) as total_leads FROM clients
+
+JOIN sites ON sites.client_id = clients.client_id
+
+JOIN leads ON leads.site_id = sites.site_id
+
+WHERE (leads.registered_datetime BETWEEN '2011-01-01' AND '2011-12-31')
+
+GROUP BY clients.client_id
 
 7)
+SELECT clients.client_id, clients.first_name, clients.last_name, count(leads.leads_id) as total_leads, monthname(leads.registered_datetime) as month_name FROM clients
+
+JOIN sites ON sites.client_id = clients.client_id
+
+JOIN leads ON leads.site_id = sites.site_id
+
+WHERE (leads.registered_datetime BETWEEN '2011-01-01' AND '2011-06-31')
+
+GROUP BY clients.client_id
 
 8)
+SELECT clients.client_id, clients.first_name, clients.last_name, sites.domain_name, count(leads.leads_id) as total_leads, sites.created_datetime FROM clients
+
+JOIN sites ON sites.client_id = clients.client_id
+
+JOIN leads ON leads.site_id = sites.site_id
+WHERE (leads.registered_datetime BETWEEN '2011-01-01' AND '2011-12-31')
+
+GROUP BY sites.domain_name
+
+
+SELECT CONCAT(clients.first_name, ' ', clients.last_name) as client_name, sites.domain_name, count(leads.leads_id) as total_leads FROM clients
+
+JOIN sites ON sites.client_id = clients.client_id
+
+JOIN leads ON leads.site_id = sites.site_id
+
+GROUP BY sites.domain_name
+
 
 9)
 
